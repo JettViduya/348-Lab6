@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EECS 348 Lab Seven Practice Two</title>
+    <style>
+        /* Basic reset for margin and padding */
+        body, h1, div {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the body */
+        body {
+            font-family: Arial, sans-serif; /* Font family for the page */
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark text color */
+            padding: 20px; /* Padding around the body */
+        }
+
+        /* Heading style */
+        h1 {
+            text-align: center; /* Center align the heading */
+            color: #0056b3; /* Blue color for the heading */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        /* Style for the paragraph box */
+        #paragraph {
+            border-style: solid; /* Solid border */
+            border-width: 5px; /* Initial border width */
+            padding: 20px; /* Padding inside the paragraph */
+            width: 80%; /* Width of the paragraph */
+            max-width: 600px; /* Max width for larger screens */
+            margin: 0 auto; /* Center the paragraph */
+            background-color: white; /* White background for contrast */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        /* Style for input fields and button */
+        input[type="text"], button {
+            margin: 10px 0; /* Space around inputs and button */
+            padding: 10px; /* Padding inside the fields */
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 4px; /* Rounded corners */
+            width: calc(50% - 22px); /* Half width minus margins */
+            display: inline-block; /* Align inputs inline */
+        }
+
+        button {
+            background-color: #0056b3; /* Blue background for button */
+            color: white; /* White text on button */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: #003d80; /* Darker blue on hover */
+        }
+
+        /* Style for input labels */
+        label {
+            display: block; /* Stack labels above inputs */
+            margin-top: 10px; /* Space above labels */
+        }
+    </style>
+</head>
+<body>
+    <h1>EECS 348 Lab Seven Practice Two</h1>
+
+    <div id="paragraph">
+        Paragraph to be altered.
+    </div>
+
+    <label for="border_R">Border R(0-255):</label>
+    <input type="text" id="border_R" value=""> 
+    <label for="border_G">Border G(0-255):</label>
+    <input type="text" id="border_G" value=""> 
+    <label for="border_B">Border B(0-255):</label>
+    <input type="text" id="border_B" value=""> 
+    <label for="border_width">Border Width:</label>
+    <input type="text" id="border_width" value=""> 
+    <label for="bg_R">Background R(0-255):</label>
+    <input type="text" id="bg_R" value=""> 
+    <label for="bg_G">Background G(0-255):</label>
+    <input type="text" id="bg_G" value=""> 
+    <label for="bg_B">Background B(0-255):</label>
+    <input type="text" id="bg_B" value=""> 
+
+    <button onclick="changeParagraphColor()">Change the color!</button>
+
+    <script type="text/javascript" src="function.js"></script>
+</body>
+</html>
+

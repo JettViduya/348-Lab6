@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EECS 348 Lab Seven Practice Three</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Sets font for the entire body */
+            background-color: #f4f4f4; /* Light gray background color */
+            margin: 0; /* Removes default margin */
+            padding: 20px; /* Adds padding around the body */
+        }
+        h1 {
+            text-align: center; /* Centers the heading */
+            color: #333; /* Dark gray color for text */
+        }
+        .form-container {
+            max-width: 400px; /* Sets maximum width of the form */
+            margin: auto; /* Centers the form horizontally */
+            background: white; /* White background for the form */
+            padding: 20px; /* Adds padding inside the form */
+            border-radius: 5px; /* Rounds the corners of the form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+        }
+        label {
+            display: block; /* Makes labels display as block elements */
+            margin: 10px 0 5px; /* Adds margin for spacing */
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%; /* Full width for input fields */
+            padding: 10px; /* Padding inside the input fields */
+            margin-bottom: 15px; /* Space below each input */
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 4px; /* Rounds the corners of input fields */
+        }
+        button {
+            width: 100%; /* Full width for the button */
+            padding: 10px; /* Padding inside the button */
+            background-color: #28a745; /* Green background color */
+            color: white; /* White text color */
+            border: none; /* Removes default border */
+            border-radius: 4px; /* Rounds the corners of the button */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+        }
+        button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>EECS 348 Lab Seven Practice Three</h1>
+    <div class="form-container">
+        <label for="pass1">First Password:</label>
+        <input type="password" id="pass1" placeholder="Enter your password"> <!-- First password input -->
+        
+        <label for="pass2">Second Password:</label>
+        <input type="password" id="pass2" placeholder="Re-enter your password"> <!-- Second password input -->
+        
+        <button onclick="validate()">Validate Your Passwords</button> <!-- Button to trigger validation -->
+    </div>
+
+    <script type="text/javascript" src="function.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
